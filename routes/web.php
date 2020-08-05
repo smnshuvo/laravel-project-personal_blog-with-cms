@@ -13,21 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostController@index');
 
-Route::get('/posts', function(){
-    $post = [
-        'post_title' => "This is the demo post title"
-    ];
-    return view('posts', $post );
-});
+Route::get('/posts', 'PostController@posts');
 
-// to show individual post
-Route::get('/posts/{id}', function($id){
-    $post = [
-        'post_id' => $id
-    ];
-    return view('post_single', $post );
-});
+Route::get('/posts/{id}', 'PostContoller@showPost');
