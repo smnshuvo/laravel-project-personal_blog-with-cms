@@ -3,12 +3,12 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <div class="blog-container">
-@for ($i = 0; $i < 5; $i++)
+@foreach($posts as $post)
 <div class="row">
   <div class="span8">
     <div class="row">
       <div class="span8">
-        <h4><strong><a href="#">{{ $post_title }}</a></strong></h4>
+        <h4><strong><a href="#">{{ $post->post_title }}</a></strong></h4>
       </div>
     </div>
     <div class="row">
@@ -19,7 +19,7 @@
       </div>
       <div class="span6">      
         <p>
-          Lorem ipsum dolor sit amet, id nec conceptam conclusionemque. Et eam tation option. Utinam salutatus ex eum. Ne mea dicit tibique facilisi, ea mei omittam explicari conclusionemque, ad nobis propriae quaerendum sea.
+          {{ Str::limit($post->post_body,250)}}
         </p>
         <p><a class="btn" href="#">Read more</a></p>
       </div>
@@ -42,5 +42,5 @@
   </div>
 </div>
 <hr>
-@endfor
+@endforeach
 </div>

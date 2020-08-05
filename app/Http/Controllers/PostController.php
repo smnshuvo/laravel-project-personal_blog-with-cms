@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
 
 class PostController extends Controller
 {
@@ -13,10 +14,10 @@ class PostController extends Controller
 
     // list of posts
     public function posts(){
-        $post = [
-            'post_title' => "This is the demo post title"
-        ];
-        return view('posts', $post );
+        $posts = Post::all();
+        return view('posts', [
+            'posts' => $posts
+        ]);
     }
 
     // show individual post
