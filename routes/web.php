@@ -16,3 +16,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/posts', function(){
+    $post = [
+        'post_title' => "This is the demo post title"
+    ];
+    return view('posts', $post );
+});
+
+// to show individual post
+Route::get('/posts/{id}', function($id){
+    $post = [
+        'post_id' => $id
+    ];
+    return view('post_single', $post );
+});
