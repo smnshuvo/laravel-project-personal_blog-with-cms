@@ -23,8 +23,14 @@ class PostController extends Controller
     // show individual post
     public function showPost($id){
         $post = [
-            'post_id' => $id
+            'post' => Post::findorFail($id)
         ];
-        return view('post_single', $post );
+        return view('post_single', $post);
     }
+
+
+    public function createPost(){
+        return view('createPost');
+    }
+    
 }

@@ -17,6 +17,8 @@ class CreatePostTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('post_title');
+            $table->string('post_credit');
+            $table->string('post_credit_url');
             $table->text('post_body', 65000);
             $table->string('post_tags');
         });

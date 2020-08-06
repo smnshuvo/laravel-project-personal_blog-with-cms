@@ -17,4 +17,6 @@ Route::get('/', 'PostController@index');
 
 Route::get('/posts', 'PostController@posts');
 
-Route::get('/posts/{id}', 'PostContoller@showPost');
+Route::get('/posts/{id}', 'PostController@showPost');
+
+Route::get('/blog-admin/create-post', 'PostController@createPost');

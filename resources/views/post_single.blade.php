@@ -1,1 +1,2 @@
-<h1> {{ $post_id }} </h1>
+<h1> {{ $post->post_title }} </h1>
+<p> <pre> {{ $post->post_body }} </pre> </p>
