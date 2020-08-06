@@ -20,3 +20,5 @@ Route::get('/posts', 'PostController@posts');
 Route::get('/posts/{id}', 'PostController@showPost');
 
 Route::get('/blog-admin/create-post', 'PostController@createPost');
+
+Route::post('create-post', 'PostController@storePost');

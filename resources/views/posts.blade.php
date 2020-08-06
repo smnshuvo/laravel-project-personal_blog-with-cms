@@ -21,7 +21,7 @@
         <p>
           {{ Str::limit($post->post_body,250)}}
         </p>
-        <p><a class="btn" href="#">Read more</a></p>
+        <p><a class="btn" href="/posts/{{ $post->id }}">Read more</a></p>
       </div>
     </div>
     <div class="row">

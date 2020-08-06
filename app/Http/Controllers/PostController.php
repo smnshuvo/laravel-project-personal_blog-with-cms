@@ -32,5 +32,16 @@ class PostController extends Controller
     public function createPost(){
         return view('createPost');
     }
+
+    // to save a post to the database
+    public function storePost(){
+        $post = new Post();
+        $post->post_title = request("post-title");
+        $post->post_body = request("post-body");
+
+        // save the post to database now
+        $post->save();
+        return redirect("/");
+    }
     
 }

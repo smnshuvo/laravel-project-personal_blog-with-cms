@@ -17,10 +17,10 @@ class CreatePostTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('post_title');
-            $table->string('post_credit');
-            $table->string('post_credit_url');
+            $table->string('post_credit')->nullable()->default("admin");
+            $table->string('post_credit_url')->nullable()->default("-");
             $table->text('post_body', 65000);
-            $table->string('post_tags');
+            $table->string('post_category')->nullable()->default("general");
         });
     }
 
