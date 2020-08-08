@@ -11,7 +11,9 @@
 <br>
 <label for="post-body">Details</label>
 <br>
-<input type="text" name="post-body" style="height:200px; width: 70%;">
+<textarea id="w3review" name="post-body" rows="4" cols="50">
+ 
+</textarea>
 <br>
 <input type="submit" value="Post to blog">
 </form>
