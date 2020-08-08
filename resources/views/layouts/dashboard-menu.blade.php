@@ -24,10 +24,11 @@
   </a>
   <hr>
   <ul class="menu">
-    <li><i class="material-icons"><img src="{{ asset('icons/write.png') }}" alt=""></i><p>Explore</p></li>
-    <li><i class="material-icons">&#xE8CC;</i><p>Shop</p></li>
-    <li><i class="material-icons">&#xE8B8;</i><p>Settings</p></li>
-    <li><i class="material-icons">&#xE8B6;</i><p>Search</p></li>
+    
+  <li><i class="material-icons"><img src="{{ asset('icons/dashboard.png') }}" alt=""></i><p>Reports</p></li>
+    <li><i class="material-icons active"><img src="{{ asset('icons/write.png') }}" alt=""></i><p>Create Post</p></li>
+    <li><i class="material-icons"><img src="{{ asset('icons/comment.png') }}" alt=""></i><p>Comments</p></li>    
+    <li><i class="material-icons"><img src="{{ asset('icons/maintain.png') }}" alt=""></i><p>Updates</p></li>
   </ul>
   <i class="material-icons info">&#xE88E;</i>
 </div>

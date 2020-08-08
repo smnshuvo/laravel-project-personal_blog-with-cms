@@ -1,22 +1,22 @@
 @extends('layouts.dashboard-menu')
+  
 
-@section('content')
-<h1>
-    Submitting a new record
-</h1>
-
-<form action="/create-post" method="POST">
-@csrf
-<label for="post-title">Post Title</label>
-<br>
-<input type="text" name="post-title">
-<br>
-<label for="post-body">Details</label>
-<br>
-<textarea id="w3review" name="post-body" rows="4" cols="50">
- 
-</textarea>
-<br>
-<input type="submit" value="Post to blog">
-</form>
+  @section('content')
+  <h1>Create a new post</h1>
+  <form method="post" action="/create-post">
+  @csrf
+    <input type="text" name="post-title">
+    <textarea id="post-body" name="post-body">
+      Hello, World!
+    </textarea>
+    <input type="submit" value="Post">
+  </form>
+  <script src='https://cdn.tiny.cloud/1/mjtdl8e2yj7byywz8b0ji4rfavgpkbv8f484ym5es8ssq5kb/tinymce/5/tinymce.min.js' referrerpolicy="origin">
+  </script>
+  <script>
+    tinymce.init({
+      selector: '#post-body',
+      menubar: false
+    });
+  </script>
 @endsection
