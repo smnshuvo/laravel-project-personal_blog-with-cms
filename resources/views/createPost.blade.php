@@ -1,4 +1,6 @@
+@extends('layouts.dashboard-menu')
 
+@section('content')
 <h1>
     Submitting a new record
 </h1>
@@ -17,3 +19,4 @@
 <br>
 <input type="submit" value="Post to blog">
 </form>
+@endsection

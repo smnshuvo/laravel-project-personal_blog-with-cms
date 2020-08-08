@@ -45,9 +45,6 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link {{ request()->is('posts') ? 'active' : ''}}" href="/posts">Posts</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
             </li>
             <li class="nav-item">

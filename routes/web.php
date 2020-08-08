@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PostController@index');
+Route::get('/', 'PostController@posts');
 
-Route::get('/posts', 'PostController@posts');
+//Route::get('/posts', 'PostController@posts');
 
 Route::get('/posts/{id}', 'PostController@showPost');
 
