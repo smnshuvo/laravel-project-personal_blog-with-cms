@@ -26,7 +26,7 @@ class PostController extends Controller
         $targetPost->increment('post_view_count');
         $post = [
             'post' => $targetPost,
-            'related_posts' => Post::all()->sortByDesc("id")->take(2)// load some related posts too
+            'related_posts' => Post::all()->sortByDesc("post_view_count")->take(2)// load some related posts too
         ];
         return view('post_single', $post);
     }
@@ -34,6 +34,14 @@ class PostController extends Controller
 
     public function createPost(){
         return view('createPost');
+    }
+
+    public function deletePost(){
+        
+        $posts = Post::all()->sortByDesc("id");
+        return view('deletePost', [
+            'posts' => $posts
+        ]);
     }
 
     // to save a post to the database

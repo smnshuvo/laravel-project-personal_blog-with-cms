@@ -21,6 +21,8 @@ Route::get('/posts/{id}', 'PostController@showPost');
 
 Route::get('/blog-admin/create-post', 'PostController@createPost');
 
+Route::get('/blog-admin/delete-post', 'PostController@deletePost');
+
 Route::post('create-post', 'PostController@storePost');
 
 Auth::routes();
