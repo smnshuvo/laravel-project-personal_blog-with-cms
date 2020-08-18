@@ -2,10 +2,10 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Expandable side menu CSS Only</title>
+  <title>SMN Blog | Create Post</title>
   <!-- Styles -->
-  <link href="{{ asset('css/dashboard-style.css') }}" rel="stylesheet">
-  <link rel="stylesheet" href="{{ asset('css/material-icons-min.css') }}" /> 
+  <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
+  <link href="{{ asset('public/css/dashboard-style.css') }}" rel="stylesheet">
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -25,10 +25,10 @@
   <hr>
   <ul class="menu">
     
-  <li><i class="material-icons"><img src="{{ asset('icons/dashboard.png') }}" alt=""></i><p>Reports</p></li>
-    <li><i class="material-icons active"><img src="{{ asset('icons/write.png') }}" alt=""></i><p>Create Post</p></li>
-    <li><i class="material-icons"><img src="{{ asset('icons/comment.png') }}" alt=""></i><p>Comments</p></li>    
-    <li><i class="material-icons"><img src="{{ asset('icons/maintain.png') }}" alt=""></i><p>Updates</p></li>
+  <li><i class="material-icons"><img src="{{ asset('public/icons/dashboard.png') }}" alt=""></i><p>Reports</p></li>
+    <li><i class="material-icons active"><img src="{{ asset('public/icons/write.png') }}" alt=""></i><p>Create Post</p></li>
+    <li><i class="material-icons"><img src="{{ asset('public/icons/comment.png') }}" alt=""></i><p>Comments</p></li>    
+    <li><i class="material-icons"><img src="{{ asset('public/icons/maintain.png') }}" alt=""></i><p>Updates</p></li>
   </ul>
   <i class="material-icons info">&#xE88E;</i>
 </div>

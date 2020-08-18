@@ -21,6 +21,7 @@ class CreatePostTable extends Migration
             $table->string('post_credit_url')->nullable()->default("-");
             $table->text('post_body', 65000);
             $table->string('post_category')->nullable()->default("general");
+            $table->integer('post_view_count')->default(0);
         });
     }
 

@@ -1,11 +1,15 @@
+
 @extends('layouts.dashboard-menu')
-  
+
 
   @section('content')
   <h1>Create a new post</h1>
   <form method="post" action="/create-post">
   @csrf
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Post Title</label>
     <input type="text" name="post-title">
+  </div>
     <textarea id="post-body" name="post-body">
       Hello, World!
     </textarea>

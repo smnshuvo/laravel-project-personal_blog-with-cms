@@ -7,19 +7,19 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## Minimalistic Personal Blog Site with Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## How to run this project
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+These are the pre steps you need to do if you want to run this on your local machine
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- git clone {url}
+- Open the project on your VSCode your any IDE you like
+- In terminal type ./run
+- run this command php artisan migrate
+- Browse 127.0.0.1:8000 to visit the site
+
+As this is an open source project I liked to keep it minimal.
 
 ## Learning Laravel
 

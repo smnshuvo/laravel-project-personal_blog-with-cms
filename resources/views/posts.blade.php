@@ -8,8 +8,8 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-          <h1 class="my-4">Page Heading
-            <small>Secondary Text</small>
+          <h1 class="my-4">SMN Blog
+            <small>Collection of posts</small>
           </h1>
 
 
@@ -19,7 +19,7 @@
             <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThoUk5pmkwH-Eb3dPj-El1VcAvnZgD6he9DQ&usqp=CAU" alt="Card image cap">
             <div class="card-body">
               <h2 class="card-title">{{ $post->post_title }}</h2>
-              <p class="card-text">{!! Str::limit($post->post_body, 250) !!}</p>
+              <p class="card-text">{{ Str::limit(strip_tags($post->post_body), 250) }}</p>
               <a href="/posts/{{ $post->id }}" class="btn btn-primary">Read More &rarr;</a>
             </div>
             <div class="card-footer text-muted">

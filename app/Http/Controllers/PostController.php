@@ -14,7 +14,7 @@ class PostController extends Controller
 
     // list of posts
     public function posts(){
-        $posts = Post::all();
+        $posts = Post::all()->sortByDesc("id");
         return view('posts', [
             'posts' => $posts
         ]);
@@ -22,8 +22,11 @@ class PostController extends Controller
 
     // show individual post
     public function showPost($id){
+        $targetPost = Post::findorFail($id);
+        $targetPost->increment('post_view_count');
         $post = [
-            'post' => Post::findorFail($id)
+            'post' => $targetPost,
+            'related_posts' => Post::all()->sortByDesc("id")->take(2)// load some related posts too
         ];
         return view('post_single', $post);
     }
