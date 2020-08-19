@@ -16,7 +16,7 @@
           @foreach($posts as $post)
           <!-- Blog Post -->
           <div class="card mb-4">
-            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThoUk5pmkwH-Eb3dPj-El1VcAvnZgD6he9DQ&usqp=CAU" alt="Card image cap">
+            <img class="card-img-top" src="https://ak.picdn.net/shutterstock/videos/1008131278/thumb/1.jpg" alt="Card image cap">
             <div class="card-body">
               <h2 class="card-title">{{ $post->post_title }}</h2>
               <p class="card-text">{{ Str::limit(strip_tags($post->post_body), 250) }}</p>
@@ -24,7 +24,7 @@
             </div>
             <div class="card-footer text-muted">
               Posted on {{ $post->created_at }} by
-              <a href="#">Start Bootstrap</a>
+              <a href="#">{{ $post->post_credit }}</a>
               <span class="badge badge-warning">General</span>
             </div>
           </div>

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>SMN Blog - @yield('page-title')</title>
+    <title>SMN Blog - {{ $page_title ?? 'Developed by SMN Shuvo' }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('public/js/app.js') }}" defer></script>
@@ -45,7 +45,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="/blog-admin">cPanel</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Profile</a>

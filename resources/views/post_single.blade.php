@@ -7,7 +7,7 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
             <h1>{{ $post->post_title }} </h1>
-                <p>   Posted by xyz | 👁️ {{ $post->post_view_count }}  </p>
+                <p>   Posted by {{ $post->post_credit }} | 👁️ {{ $post->post_view_count }}  </p>
             <div> {!! $post->post_body !!} </div>
         </div> <!-- end of col -->
 
@@ -34,6 +34,14 @@
             @endforeach
         </div>
     </div> <!-- end of row -->
-
+    <!-- comment section -->
+    <div class="container m-4 blog-comment">
+    @if (!Auth::guest())
+        <h3>Your comments will appear here</h3>
+    @else
+        <h2>You must be logged in to post a comment!!!</h2>
+    @endif
+    </div>
+    <!-- end of comment section -->
 </div> <!-- end of container -->
 @endsection

@@ -1,42 +1,93 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>SMN Blog | Create Post</title>
-  <!-- Styles -->
-  <link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
-  <link href="{{ asset('public/css/dashboard-style.css') }}" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.active{
+  background-color: grey;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.active{
+  color: black !important;
+}
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<link href="{{ asset('public/css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div id="cont">
-<div id="menu-fixed">
-  <div class="notes"><p>Expand the menu!</p></div>
-  <a href="#cont">
-    <i class="material-icons back">&#xE314;</i>
-  </a>
-  <a href="#menu-fixed">
-    <div class="logo">
-      <span></span>   
-      <p>SMN</p>
-    </div>
-    <p class="pmenu">BLOG</p>
-  </a>
-  <hr>
-  <ul class="menu">
-    
-  <li><i class="material-icons"><img src="{{ asset('public/icons/dashboard.png') }}" alt=""></i><p>Reports</p></li>
-    <li><i class="material-icons active"><img src="{{ asset('public/icons/write.png') }}" alt=""></i><p>Create Post</p></li>
-    <li><i class="material-icons"><img src="{{ asset('public/icons/comment.png') }}" alt=""></i><p>Comments</p></li>    
-    <li><i class="material-icons"><img src="{{ asset('public/icons/maintain.png') }}" alt=""></i><p>Updates</p></li>
-  </ul>
-  <i class="material-icons info">&#xE88E;</i>
-</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/">Home Page</a>
+  <a href="create-post" class="active">Create Post</a>
+  <a href="delete-post">Delete Post</a>
+  <a href="delete-post">Support</a>
+  
 </div>
 
-<div id="page">
-  @yield('content')
+<div id="main">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; SMN BLOG</span>		
+  <div>@yield('content')</div>
 </div>
 
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
 </body>
-</html>
+</html> 

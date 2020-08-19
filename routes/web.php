@@ -19,9 +19,11 @@ Route::get('/', 'PostController@posts');
 
 Route::get('/posts/{id}', 'PostController@showPost');
 
-Route::get('/blog-admin/create-post', 'PostController@createPost');
+Route::get('/blog-admin', function(){return redirect("/blog-admin/create-post");});
 
-Route::get('/blog-admin/delete-post', 'PostController@deletePost');
+Route::get('/blog-admin/create-post', 'PostController@createPost')->middleware('auth');
+
+Route::get('/blog-admin/delete-post', 'PostController@deletePost')->middleware('auth');
 
 Route::post('create-post', 'PostController@storePost');
 
