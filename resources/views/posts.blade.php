@@ -16,7 +16,14 @@
           @foreach($posts as $post)
           <!-- Blog Post -->
           <div class="card mb-4">
-            <img class="card-img-top" src="https://ak.picdn.net/shutterstock/videos/1008131278/thumb/1.jpg" alt="Card image cap">
+            <img class="card-img-top" src="
+            @if($post->post_image_attachment != null){
+              ..\..\{{ $post->post_image_attachment }}
+            }
+            @else
+            https://ak.picdn.net/shutterstock/videos/1008131278/thumb/1.jpg
+            @endif
+            " alt="Card image cap">
             <div class="card-body">
               <h2 class="card-title">{{ $post->post_title }}</h2>
               <p class="card-text">{{ Str::limit(strip_tags($post->post_body), 250) }}</p>

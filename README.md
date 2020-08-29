@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Minimalistic Personal Blog Site with Laravel
+# Minimalistic Personal Blog Site with Laravel
 
 ## How to run this project
 

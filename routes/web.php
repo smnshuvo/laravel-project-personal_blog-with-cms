@@ -27,6 +27,10 @@ Route::get('/blog-admin/delete-post', 'PostController@deletePost')->middleware('
 
 Route::post('create-post', 'PostController@storePost');
 
+Route::post('post-comment', 'CommentController@saveComment');
+
+Route::delete('/posts/{id}', 'PostController@destroy')->middleware('auth');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
