@@ -1,13 +1,15 @@
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+<h1 align="center">
+Minimalistic Personal Blog Site with Laravel
+</h1>
+
+<p align="center">    
+A simple blog site built in laravel developed solely by SMN Shuvo.
 </p>
 
-# Minimalistic Personal Blog Site with Laravel
+
 
 ## How to run this project
 
@@ -21,41 +23,42 @@ These are the pre steps you need to do if you want to run this on your local mac
 
 As this is an open source project I liked to keep it minimal.
 
-## Learning Laravel
+## Page Shot
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### The home page
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![page_shot](https://github.com/smnshuvo/laravel-project-personal_blog-with-cms/blob/master/uploads/shot_1.png)
 
-## Laravel Sponsors
+### The Post View
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![page_shot](https://github.com/smnshuvo/laravel-project-personal_blog-with-cms/blob/master/uploads/shot_5.png)
 
-### Premium Partners
+### CMS :: Delete Contents
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+![page_shot](https://github.com/smnshuvo/laravel-project-personal_blog-with-cms/blob/master/uploads/shot_3.png)
 
-## Contributing
+### CMS :: Add Content
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+![page_shot](https://github.com/smnshuvo/laravel-project-personal_blog-with-cms/blob/master/uploads/shot_4.png)
 
-## Code of Conduct
+### Commenting to a post
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![page_shot](https://github.com/smnshuvo/laravel-project-personal_blog-with-cms/blob/master/uploads/shot_2.png)
 
-## Security Vulnerabilities
+## Project Partners
+-
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Notes
+
+As an open source project I liked to kept it as minimalistic as I can. I am tired of getting projects copied without any credit.
+
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-sourced software licensed under the [Apache license](https://www.apache.org/licenses/LICENSE-2.0).
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
