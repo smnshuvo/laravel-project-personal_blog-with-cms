@@ -65,7 +65,7 @@ class PostController extends Controller
         $post->post_body = request("post-body");
         if($req->file('img')!= null){
         $attach_file_name = date('mdYHis') .$req->file('img')->getClientOriginalName();
-        $post->post_image_attachment = $req->file("img")->move("uploads\post_atmnt", $attach_file_name);
+        $post->post_image_attachment = $req->file("img")->move("uploads\attachment", $attach_file_name);
         }
         
         

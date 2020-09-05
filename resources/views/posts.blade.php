@@ -17,9 +17,9 @@
           <!-- Blog Post -->
           <div class="card mb-4">
             <img class="card-img-top" src="
-            @if($post->post_image_attachment != null){
-              ..\..\{{ $post->post_image_attachment }}
-            }
+            @if($post->post_image_attachment != null)
+              {{$post->post_image_attachment}}
+            
             @else
             https://ak.picdn.net/shutterstock/videos/1008131278/thumb/1.jpg
             @endif
